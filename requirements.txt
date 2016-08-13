@@ -1,1 +1,7 @@
-flask
+Flask==0.11.1
+Flask-Bootstrap==3.3.6.0
+Flask-Moment==0.5.1
+Flask-Script==2.0.5
+Flask-XStatic==0.0.1
+XStatic==1.0.1
+XStatic-moment==2.8.4.1

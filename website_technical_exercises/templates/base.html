@@ -40,6 +40,6 @@
 
 {% block scripts %}
 {{ super() }}
-{% set local_js=url_for('static', filename = 'lib/moment-with-locales.min.js') %}
+{% set local_js=url_for('xstatic', xs_package = 'moment', filename = 'moment-with-locales.min.js') %}
 {{ moment.include_moment(local_js=local_js) }}
 {% endblock %}

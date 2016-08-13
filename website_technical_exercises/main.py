@@ -5,12 +5,15 @@ from flask import render_template
 from flask_script import Manager
 from flask_bootstrap import Bootstrap
 from flask_moment import Moment
+from flask_xstatic import FlaskXStatic
 
 app = Flask(__name__)
 manager = Manager(app)
 bootstrap = Bootstrap(app)
 moment = Moment(app)
+xs = FlaskXStatic(app)
 
+xs.add_module('moment')
 app.extensions['bootstrap']['cdns']['bootstrap'] = app.extensions['bootstrap']['cdns']['local']
 app.extensions['bootstrap']['cdns']['jquery'] = app.extensions['bootstrap']['cdns']['local']
 
